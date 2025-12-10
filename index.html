@@ -1,58 +1,170 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Shubham Pandey — Portfolio</title>
-  <style>
-    body{font-family:Arial, sans-serif;margin:0;padding:0;background:#f4f6f9;}
-    .container{max-width:900px;margin:30px auto;padding:20px;background:#fff;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.1);}
-    h1{margin:0;font-size:32px;color:#111;}
-    p{color:#444;line-height:1.6;}
-    h2{color:#0d6efd;}
-    .btn{display:inline-block;padding:8px 14px;background:#0d6efd;color:#fff;text-decoration:none;border-radius:8px;margin:5px 5px 0 0;}
-    ul{padding-left:20px;}
-    footer{text-align:center;color:#666;margin-top:20px;font-size:14px;}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Pandey — AI & Software Developer</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #0f0f0f;
+            color: #fff;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            height: 100vh;
+            background: url('https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=1600&q=80') 
+            center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            backdrop-filter: brightness(0.4);
+        }
+
+        .hero-content {
+            background: rgba(0, 0, 0, 0.55);
+            padding: 35px;
+            border-radius: 16px;
+            max-width: 650px;
+            box-shadow: 0 0 25px rgba(255,255,255,0.2);
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #0ea5e9;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin: 10px 6px 0;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* MAIN SECTIONS */
+        .section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #0ea5e9;
+        }
+
+        ul {
+            padding-left: 20px;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #141414;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 12px rgba(255,255,255,0.08);
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #aaa;
+            background: #0a0a0a;
+            margin-top: 30px;
+        }
+
+        @media(max-width: 600px){
+            .hero h1{ font-size: 32px; }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Hi, I'm Shubham Pandey 👋</h1>
-    <p><b>MERN Stack Developer | AI/ML Practitioner | Full-Stack Web Developer | BCA ’25</b></p>
 
-    <h2>About Me</h2>
-    <p>
-      I build modern web applications and explore machine learning.  
-      I have created a full Online Food Ordering System using HTML, CSS, JavaScript, PHP & MySQL.  
-      Currently learning MERN Stack, Python, Pandas, NumPy & Scikit-Learn for Data Science.
-    </p>
-    <p><b>Email:</b> <a href="mailto:shubham-2k5@gmail.com">shubham-2k5@gmail.com</a></p>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Shubham Pandey</h1>
+            <p>AI Enthusiast • MERN Stack Developer • Software Developer<br>
+               Building smart applications using Web Technologies & Machine Learning.</p>
+        
+            <a class="btn" href="mailto:shubhampandey2k5@gmail.com">Contact Me</a>
+            <a class="btn" href="https://github.com/shubham-2k5" target="_blank">GitHub</a>
+            <a class="btn" href="https://www.linkedin.com/in/shubham-pandey01" target="_blank">LinkedIn</a>
+        </div>
+    </section>
 
-    <h2>Skills</h2>
-    <ul>
-      <li><b>Frontend:</b> HTML, CSS, JavaScript, React</li>
-      <li><b>Backend:</b> Node.js, Express, PHP</li>
-      <li><b>Databases:</b> MongoDB, MySQL</li>
-      <li><b>AI/ML:</b> Python, Pandas, NumPy, Scikit-Learn, Anaconda</li>
-      <li><b>Tools:</b> VS Code, Git, GitHub</li>
-    </ul>
+    <!-- ABOUT -->
+    <section class="section">
+        <div class="card">
+            <h2>About Me</h2>
+            <p>
+                I'm Shubham Pandey, a passionate AI & Software Developer with strong skills in MERN Stack, Python, and Machine Learning.  
+                I specialize in building modern web applications and smart systems that solve real-world problems.
+                <br><br>
+                Completed my BCA from Rajarshi School of Management & Technology, affiliated with MGKVP, Varanasi.
+            </p>
+        </div>
+    </section>
 
-    <h2>Projects</h2>
-    <ul>
-      <li><b>Online Food Ordering System</b> – HTML, CSS, JS, PHP, MySQL</li>
-      <li><b>MERN Practice App</b> – React + Node + Express + MongoDB</li>
-      <li><b>AI/ML Practice</b> – Python, Scikit-Learn</li>
-    </ul>
+    <!-- SKILLS -->
+    <section class="section">
+        <div class="card">
+            <h2>Skills</h2>
+            <ul>
+                <li><b>Frontend:</b> HTML, CSS, JavaScript, React</li>
+                <li><b>Backend:</b> Node.js, Express, PHP</li>
+                <li><b>Databases:</b> MongoDB, MySQL</li>
+                <li><b>AI/ML:</b> Python, Scikit-Learn, Pandas, NumPy, Anaconda</li>
+                <li><b>Tools:</b> VS Code, Git, GitHub</li>
+            </ul>
+        </div>
+    </section>
 
-    <h2>Social Links</h2>
-    <a class="btn" href="https://github.com/shubham-2k5">GitHub</a>
-    <a class="btn" href="https://www.linkedin.com/in/shubham-pandey01">LinkedIn</a>
-    <a class="btn" href="https://www.youtube.com/@yatharth_drishti">YouTube</a>
+    <!-- PROJECTS -->
+    <section class="section">
+        <div class="card">
+            <h2>Projects</h2>
+            <ul>
+                <li><b>Online Food Ordering System</b> — Full Web App (HTML, CSS, JS, PHP, MySQL)</li>
+                <li><b>MERN Practice App</b> — React + Node + Express + MongoDB</li>
+                <li><b>AI/ML Practice Codes</b> — Python + Scikit-Learn</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section">
+        <div class="card">
+            <h2>Contact</h2>
+            <p><b>Email:</b> <a href="mailto:shubhampandey2k5@gmail.com" style="color:#0ea5e9;">shubhampandey2k5@gmail.com</a></p>
+            <p><b>Location:</b> Varanasi, India</p>
+        </div>
+    </section>
 
     <footer>
-      © 2025 Shubham Pandey — Built with ❤️  
+        © 2025 Shubham Pandey — AI & Software Developer Portfolio
     </footer>
-  </div>
+
 </body>
 </html>
